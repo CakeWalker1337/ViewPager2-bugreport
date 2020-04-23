@@ -24,9 +24,15 @@ class MyFragment : Fragment() {
         etTitle.setText(value.toString())
 
         // setup recycler view with custom adapter.
+        rvItems.layoutManager = LinearLayoutManager(requireContext())
+
         // No matter which adapter is used, the bug is still existed (FastAdapter works the same)
         val adapter = CustomAdapter()
-        rvItems.layoutManager = LinearLayoutManager(requireContext())
+
+        // an example of reproducing the bug using FastAdapter (uncomment it)
+//        val adapter = FastItemAdapter<ItemItem>()
+//        adapter.setNewList(listOf(ItemItem(), ItemItem(), ItemItem()))
+        
         rvItems.adapter = adapter
     }
 
