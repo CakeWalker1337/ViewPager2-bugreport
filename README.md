@@ -6,3 +6,4 @@ When user touches EditText inside item, the focus accidentially loses.
 Also there is a simple EditText on every tab (not in recycler, just on a tab fragment). It works pretty well and doesn't drop a focus.
 
 
+![Proof](./Proof.gif)
