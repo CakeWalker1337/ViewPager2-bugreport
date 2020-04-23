@@ -32,7 +32,7 @@ class MyFragment : Fragment() {
         // an example of reproducing the bug using FastAdapter (uncomment it)
 //        val adapter = FastItemAdapter<ItemItem>()
 //        adapter.setNewList(listOf(ItemItem(), ItemItem(), ItemItem()))
-        
+
         rvItems.adapter = adapter
     }
 
